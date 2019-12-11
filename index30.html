@@ -23,21 +23,23 @@
 
     <button id="button">click me</button>
     <script>
-
       var path = document.querySelector('.cls-1');
       path.style.strokeDasharray = path.getTotalLength();
       path.style.strokeDashoffset = path.getTotalLength();
 
-      var button = document.querySelector('#button');
-      var toggler = true;
-      button.addEventListener('click', function() {
-        if(toggler) {
-          path.style.strokeDashoffset = 0;
-        } else {
-          path.style.strokeDashoffset = path.getTotalLength();
-        }
-        toggler = !toggler
-      });
+    var button = document.querySelector('#button');
+    button.addEventListener('click', function() {
+      path.style.strokeDashoffset = 0;
+    });
+
+      var path = document.querySelector('.cls-1');
+      path.style.strokeDashoffset = path.getTotalLength();
+      path.style.strokeDasharray = path.getTotalLength();
+
+    var button = document.querySelector('#button');
+    button.addEventListener('click', 'click', function() {
+      path.style.strokeDashoffset = 0;
+    });
     </script>
   </body>
 </html>
